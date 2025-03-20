@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SorDou</title>
+  <link rel="icon" type="image/x-icon" href="/assests/images/home-page/logo.webp">
+  <!--animation links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--bootstrap links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--slick carousel links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--stylesheets-->
+  <link rel="stylesheet" href="/assests/css/global.css">
+  <link rel="stylesheet" href="/assests/css/style.css">
+</head>
+
+<body>
+  <!---navbar-->
+  <nav class="navbar padding-x">
+    <div class="logo">
+      <img src="/assests/images/home-page/logo.webp" alt="Logo">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-container">
+      <ul class="nav-links nav-menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Foods</a></li>
+        <li class="mobile-contact"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="global-btn desktop-contact">
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <!--end of navbar-->
+  <!---first-section starting-->
+  <div class="main-landing-section padding-x">
+    <div class="inner-container">
+      <div class="top-content">
+        <div class="left-content scrollAnimation" style="transform: translateX(-100%); opacity: 0; transition: all 1s ease-in-out 1s">
+          <h1 class="landing-title">PIZZA</h1>
+          <p>Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers. Experience culinary
+            bliss with every bite.</p>
+        </div>
+        <div class="right-content">
+          <h1 class="title scrollAnimation" style="transform: translateY(-100%); opacity: 0; transition: all 1s ease-in-out 1s">Hot, Fresh, and Delicious!</h1>
+        </div>
+      </div>
+      <div class="centered-circle">
+        <div class="circle scrollAnimation">
+          <div class="images">
+            <div class="overlayed-images">
+              <img src="/assests/images/home-page/landing-section-pizza.webp" alt="pizza-img" class="pizza-img scrollAnimation" style="transform: translateX(-100%); opacity: 0; transition: all 1s ease-in-out 1s;">
+            </div>
+            <div class="overlayed-images">
+              <img src="/assests/images/home-page/landing-section-cake.webp" alt="cake-img" class="cake-img scrollAnimation" style="transform: translateX(100%); opacity: 0; transition: all 1s ease-in-out 1s;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bottom-content">
+        <div class="left-content">
+          <img src="/assests/images/home-page/leaf.webp" alt="leaf-img" class="leaf-image scrollAnimation" style="transform: translateX(100%); opacity: 0; transition: all 1s ease-in-out 1s;">
+          <h1 class="scrollAnimation"style="transform: translateX(-100%); opacity: 0; transition: all 1s ease-in-out 1s;">Visit Now</h1>
+          <p class="scrollAnimation"style="transform: translateX(-100%); opacity: 0; transition: all 1s ease-in-out 1s;"><span><i class="fa-solid fa-location-dot"></i></span>&nbsp;&nbsp;Delicious Pizza & Burger Joint 123 Main
+            Street Banjara Hills Hyderabad, Telangana, India</p>
+        </div>
+        <div class="right-content">
+          <img src="/assests/images/home-page/leaf.webp" alt="leaf-img" class="leaf-image scrollAnimation" style="transform: translateX(-100%); opacity: 0; transition: all 1s ease-in-out 1s;">
+          <h1 class="landing-title circle-left scrollAnimation" style="transform: translateX(100%); opacity: 0; transition: all 1s ease-in-out 1s;">CAKES</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---end of first-section-->
+  <!--Our-story section-->
+  <div class="our-story padding-x">
+    <div class="text-section">
+      <h1 class="ourstory-title">Our Story</h1>
+      <h2 class="ourstory-subtitle">We are <span>tasty</span></h2>
+      <p class="ourstory-content">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
+        burgers. Experience culinary
+        bliss with every bite.</p>
+      <p class="ourstory-content">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
+        burgers.</p>
+      <div class="global-btn">
+        <a href="#">Know More</a>
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="/assests/images/home-page/ourstory-img.webp" alt="French Fries">
+    </div>
+  </div>
+  <!--our-story end-->
+  <!---menu-->
+  <div class="menu-section padding-x">
+    <div class="menu-title-content">
+      <h1 class="menu-title">Menu</h1>
+      <p class="menu-subtitle">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers.
+      </p>
+    </div>
+    <h2 class="menu-title-undertext">We are <span>tasty</span></h2>
+
+    <div class="menu-slider" id="menuScroll">
+      <div class="menu-card">
+        <img src="/assests/images/home-page/carousel-img1.webp" alt="Chocolate Cake">
+        <h3>Chocolate Ganache Customized Cakes</h3>
+        <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+        <div class="global-btn">
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="/assests/images/home-page/carousel-img2.webp" alt="Pizza">
+        <h3>Classic Tomato Pizza</h3>
+        <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+        <div class="global-btn">
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="/assests/images/home-page/carousel-img3.webp" alt="Cold Coffee">
+        <h3>Cold Coffee</h3>
+        <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+        <div class="global-btn">
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="/assests/images/home-page/carousel-img1.webp" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+        <div class="global-btn">
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/0686/b01f/af0dc29585e9749646f3270d7296a6b7?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rTUJlWKgAtdw5wuc1UX1clL60rXM0c7wZ2WjIaM2H8mROogniT6WK0ZSYsSmHesvi5U0A5pRvFfktf144cyXemANwk9INSdoVXFbNdypVYhhcTeL6-yL9AnGYlr9Lw082w7lNKWARNfVEKYmjcP7QqZd8J3WOiliT5z-OjDX652XmIfD912shmfXP-BxsxtJcGdHj7j54TkNAPIfjGUXm9OqjQKi01hhHpBatcRFzdi60VycN5kRdZAu6NfdfdqjVgGrUSLQevps2g7ffpvRiMFXpma-41XSzYZomfB0BhNa3~qgRnrG0e9~bcmUfLhICwGMDUmWGz0BylMVO2vrBg__"
+          alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+        <div class="global-btn">
+          <a href="#">Know More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="controls">
+        <button class="control-btn" onclick="scrollMenu(-300)">❮</button>
+        <button class="control-btn" onclick="scrollMenu(300)">❯</button>
+      </div>
+      <div class="global-btn">
+        <a href="#">Know More</a>
+      </div>
+    </div>
+  </div>
+  <!---end of menu-section-->
+
+  <!--categories-->
+  <div class="Categories padding-x">
+    <div class="left-section">
+      <div class="Categories-title">
+        <h1>Categories</h1>
+        <h2 class="categories-title-undertext">We are <span>tasty</span></h2>
+      </div>
+      <h2 class="Categories-headings">Pizza Hub</h2>
+      <p class="Categories-content">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
+        burgers.</p>
+      <h2 class="Categories-headings">Hot French Fries</h2>
+      <p class="Categories-content">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
+        burgers.</p>
+      <h2 class="Categories-headings">Flavour Cakes</h2>
+      <pb class="Categories-content">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
+        burgers.</p>
+    </div>
+    <div class="right-section">
+      <div class="image-box img1"
+        style="background-image: url('https://s3-alpha-sig.figma.com/img/862c/8d57/bc35f9e902397fb4d0b608d2b8cb6fa4?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=j3rmuIUVmIdCiW77Yev7cc70IjdU7~LbcS4Fqn5jKcX~omiW217ALt-LV~IsSCU638rYEo~8jfRmAC8Y0TmI2bnadVKwIUbH~0lU8y6t8ChjNyyiP7g3IPGRb~o4zPTrz3vVxySVCvd7CWtFC2Mqk4dHps5NUtF3wt8vmVPXj1h14nkHBgaPO2OQRZVn~2q~iBenKiFBFBsZXNrcVCLUewz9brhPGFjVRnjMy97z2QmaejmRTZv2URAH0Bv1C0Taluppl0kTbxFfDhGn~utkiiShYc3k9ucS27JTeWJ9WFsL4UJjju5MHPHdHlBYOuzRf5Kla1pA2cF452FxUJDiKg__'); height: 500px;">
+      </div>
+      <div class="image-container">
+        <div class="image-box img2"
+          style="background-image: url('https://s3-alpha-sig.figma.com/img/b14e/74c7/da514a4c8a753203542edc5db0386fec?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=WqwIF~Wyi1QCEzDB6frIRvywYYw8PSKL75iZ89Wm61o4JjS6tr3-6oPj5g4ZIOCI5Z-tnS2sGeb-cx5ZJtHXMhIzBLhkFM8nG-l1fpaoJpL8cWPaadyun8a9CLksEQwhridvLItU7xc-yQlOR2acamveWGJoqcQzKZSO8n3ZeSK423FzXMlGm1qEttxgjeHFcu76L33BQ~oZsQLzfMWe2VdpgbS8W-nCzfsQGnyz3ZY8w5FGchIXLHOhck2xGRgQjXmwl8ZIRxrTclYjNlDJtkis7KZnOU1uWVYWg4SUZh3rfTvdlSEZTJJs8l4pNPFeHTr6jFlMdM7B6rq8awry4Q__'); height: 300px;">
+        </div>
+        <div class="image-box img3"
+          style="background-image: url('https://s3-alpha-sig.figma.com/img/8c13/31f3/f836cd1d93da6b01f50dfd02c51e44ea?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dObNYbEC8oNp54s9st4HYEGUoNX09sBCIMvyq4iSErjqIXla~faTRlEZhrAh2zu~UoDLK5sfm9vm5CJ8e4PqIbwlzalOcNI0kH66G1UCsDApEEbRwooUdXoIF1QrzgErJwW-ETVVmTSs-7VCDnmkW-lSWbWomt2keEquM-jfNnuTqZkQL5JVttZGgaiJWGksc6h0FAlRUdRwDupPo7KDDY34Q4qFTsjj3GWGSd~hTs6hVXssnKDSRxJ8Ack3ovhbkBxdUxREtIbUO7riu6nf-b12sxAk5StGLk~MgZxvOhc8weCy6u-A5FRm~S4N8XMSz93WOcM97xu9iqKYN7SGTQ__'); height: 300px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of categories-->
+  <!--video-section-->
+  <div class="video-banner">
+    <div class="text padding-x">
+      <p class="banner-text">
+        Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers.
+        Experience culinary bliss with every bite.
+      </p>
+    </div>
+    <div class="img">
+      <img src="/assests/images/home-page/video-banner-img.webp" alt="Pizza Video Banner" class="banner-img">
+      <div class="play-icon">
+        <i class="fa-regular fa-circle-play"></i>
+      </div>
+    </div>
+  </div>
+  <!---end of video-banner-->
+  <!----offer-banner-->
+<div class="offer">
+  <div class="offer-banner">
+    <img src="/assests/images/home-page/offer-pizzaimg.webp" alt="Pizza" class="pizza-left">
+    <div class="offer-content">
+      <p class="offer-heading">Exciting Offers</p>
+      <h1 class="offer-title">20% Off On Pizza</h1>
+      <p class="offer-description">
+        Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers.
+      </p>
+    </div>
+    <img src="/assests/images/home-page/offer-pizzaimg.webp" alt="Pizza" class="pizza-right">
+  </div>
+</div>
+  <!--end of offer-banner-->
+  <!--testmonial-cards-->
+  <div class="testimonial-container padding-x">
+    <div class="testimonial-carousel">
+      <div class="testimonial-card">
+        <img src="/assests/images/home-page/testmonial-1.png" alt="User 1" class="profile-img">
+        <div class="testimonial-content">
+          <h3>Emdadul Islam</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+        <i class="fas fa-quote-right quote-icon"></i>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="/assests/images/home-page/tesmonial-2.png" alt="User 2" class="profile-img">
+        <div class="testimonial-content">
+          <h3>Emdadul Islam</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+        <i class="fas fa-quote-right quote-icon"></i>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="/assests/images/home-page/testmonial-3.png" alt="User 3" class="profile-img">
+        <div class="testimonial-content">
+          <h3>Emdadul Islam</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+        <i class="fas fa-quote-right quote-icon"></i>
+      </div>
+      <div class="testimonial-card">
+        <img src="/assests/images/home-page/testmonial-3.png" alt="User 3" class="profile-img">
+        <div class="testimonial-content">
+          <h3>Emdadul Islam</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.</p>
+        </div>
+        <i class="fas fa-quote-right quote-icon"></i>
+      </div>
+    </div>
+  </div>
+  <!---end of testimonial-->
+  <!---footer-->
+  <footer class="footer padding-x">
+    <div class="footer-container">
+      <div class="subscribe-section">
+        <div class="input-field">
+          <input type="email" placeholder="Enter your email" class="email-input">
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+        <h3 class="subscribe-text">Add Your Email Get Offer & Discount</h3>
+      </div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="location">Delicious Pizza & Burger Joint 123 Main Street<br>Banjara Hills Hyderabad, Telangana,
+            India</p>
+        </div>
+
+        <div class="footer-center">
+          <i class="fa-solid fa-phone"></i>
+          <p class="contact">Phone: (302) 533 2345<br>Fax: (302) 533 2406<br>Email: Foodft123@Gmail.com</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">©2023 FoodFT. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!--scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+    integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Bootstrap 5 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    /*function for navbar in mobile-screen*/
+    function toggleMenu() {
+      const navContainer = document.querySelector('.nav-container');
+      const hamburger = document.querySelector('.hamburger');
+      navContainer.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+
+    /*******landing-section animations******/
+    const observeSlideUp = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=> {
+      if(entry.isIntersecting){
+        entry.target.classList.add('defaultPosition');
+      }else{
+        entry.target.classList.remove('defaultPosition');
+      }
+    });
+  });
+  
+  const slideUpSections = document.querySelectorAll(".scrollAnimation");
+  slideUpSections.forEach((ele) => observeSlideUp.observe(ele));
+
+  // Animation 2 scroll fixed animations
+const observeSlideUp2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=> {
+      if(entry.isIntersecting){
+        entry.target.classList.add('defaultPosition');
+      }
+    });
+  });
+  
+  const slideUpSections2 = document.querySelectorAll(".scrollAnimationFixed");
+  slideUpSections2.forEach((ele) => observeSlideUp2.observe(ele));
+
+    // Animation 3 width expand animations
+const observeSlideUp3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+    if(entry.isIntersecting){
+      entry.target.classList.add('defaultWidth');
+    }else{
+      entry.target.classList.remove('defaultWidth');
+    }
+  });
+});
+
+const slideUpSections3 = document.querySelectorAll(".widthAnimation");
+slideUpSections3.forEach((ele) => observeSlideUp3.observe(ele));
+    /*********menu-section cards-carousel*********/
+    $('.menu-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 200000,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1200, // For screens smaller than 1200px
+          settings: {
+            slidesToShow: 3, // Show 3 slides
+          }
+        },
+        {
+          breakpoint: 992, // For screens smaller than 992px (tablets)
+          settings: {
+            slidesToShow: 2, // Show 2 slides
+          }
+        },
+        {
+          breakpoint: 768, // For screens smaller than 768px (mobile landscape)
+          settings: {
+            slidesToShow: 1, // Show 1 slide
+          }
+        },
+      ]
+    });
+    /*********animation for play-icon video banner**********/
+    document.addEventListener("DOMContentLoaded", function () {
+    const playIcon = document.querySelector(".video-banner .img .play-icon");
+    const videoSection = document.querySelector(".video-banner");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    playIcon.classList.add("show-icon"); // Move up and fade in
+                } else {
+                    playIcon.classList.remove("show-icon"); // Move down and fade out
+                }
+            });
+        },
+        { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    observer.observe(videoSection);
+});
+
+    /********testmonial-card-carousel************/
+    $('.testimonial-carousel').slick({
+      centerMode: true,
+      centerPadding: '80px',  // Adjust for better spacing
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: true,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '60px',
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '40px',
+          }
+        }
+      ]
+    });
+
+    function scrollMenu(distance) {
+      document.getElementById('menuScroll').scrollBy({ left: distance, behavior: 'smooth' });
+    }
+
+  </script>
+
+</body>
+
+</html>

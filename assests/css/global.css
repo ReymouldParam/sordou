@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(#17140D, #242118, #221E16);
-    padding: 15px 50px;
+    padding: 10px 50px;
     border-bottom: 3px solid #E4BE69;
     position: fixed;
     top: 0;
@@ -47,7 +47,7 @@ body {
 .nav-container {
     background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
     /* Gold gradient */
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -197,6 +197,10 @@ body {
     .global-btn a {
         padding: 10px 20px !important;
         font-size:14px;
+    }
+    .padding-x {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 }
 
@@ -374,7 +378,6 @@ body {
     .footer-container .subscribe-section .subscribe-text {
         font-size: 14px;
     }
-
     .copyright {
         font-size: 14px;
     }

@@ -98,7 +98,9 @@
 
 .main-landing-section .inner-container .top-content .right-content h1 {
     font-family: var(--std-font-family);
-    color: #E4BE69;
+    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 50px;
     position: relative;
     z-index: 3;
@@ -756,7 +758,7 @@
     }
 
     .menu-section .menu-card img {
-        height: 350px;
+        height: 300px;
     }
 }
 
@@ -1031,277 +1033,6 @@
 
 }
 
-/******video-banner-section*****/
-.video-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding: 20px 0;
-    height: 700px;
-}
-
-.video-banner .text {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.video-banner .text .banner-text {
-    color: white;
-    font-size: 18px;
-    max-width: 100%;
-    text-align: center;
-}
-
-.video-banner .img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.video-banner .img .banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-.video-banner .img .play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    color: white;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-}
-
-.video-banner .img .play-icon i {
-    font-size: 100px;
-}
-
-.video-banner .img .play-icon.show-icon {
-    opacity: 1 !important;
-    transform: translate(-50%, -50%);
-}
-
-/*********extra-large*****/
-@media (min-width:1700px) and (max-width:2600px) {
-    .video-banner .text .banner-text {
-        font-size: 20px;
-    }
-}
-
-/********large screens******/
-@media screen and (max-width: 1400px) {
-    .video-banner .text .banner-text {
-        font-size: 16px;
-    }
-}
-
-/******tablets*********/
-@media screen and (max-width: 800px) {
-    .video-banner .text .banner-text {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .video-banner .text .banner-text {
-        font-size: 14px;
-    }
-
-    .video-banner {
-        height: auto;
-    }
-}
-
-/*offer-banner*/
-.offer {
-    background-color: black;
-    padding: 20px 0;
-}
-
-.offer-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: radial-gradient(circle, #D9D9D9, white);
-    padding: 40px 0;
-    width: 100%;
-    box-shadow: 0px -3px 6px #fdd369,
-        0px 3px 6px #fdd369;
-    overflow: hidden;
-}
-
-.offer-banner img {
-    width: 200px;
-    height: auto;
-}
-
-.offer-banner .offer-content {
-    text-align: center;
-    flex: 1;
-}
-
-.offer-banner .offer-heading {
-    font-size: 50px;
-    font-style: italic;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.offer-banner .offer-title {
-    font-size: 70px;
-    font-weight: bold;
-    margin: 0;
-    color: black;
-}
-
-.offer-banner .offer-description {
-    font-size: 18px;
-    color: black;
-    margin-top: 10px;
-}
-
-/*****animations****/
-.offer-banner .pizza-left {
-    animation: lefteffect 10s ease-in-out infinite;
-    opacity: 1;
-}
-
-@keyframes lefteffect {
-    0% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
-
-    25% {
-        transform: translate(50px, 50px) rotate(90deg);
-    }
-
-    50% {
-        transform: translate(0px, 100px) rotate(180deg);
-    }
-
-    75% {
-        transform: translate(-50px, 50px) rotate(270deg);
-    }
-
-    100% {
-        transform: translate(0px, 0px) rotate(360deg);
-    }
-}
-
-.offer-banner .pizza-right {
-    animation: righteffect 10s ease-in-out infinite;
-    opacity: 1;
-}
-
-@keyframes righteffect {
-    0% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
-
-    25% {
-        transform: translate(-50px, -50px) rotate(90deg);
-    }
-
-    50% {
-        transform: translate(0px, -100px) rotate(180deg);
-    }
-
-    75% {
-        transform: translate(50px, -50px) rotate(270deg);
-    }
-
-    100% {
-        transform: translate(0px, 0px) rotate(360deg);
-    }
-}
-
-
-
-@media (min-width:1700px) and (max-width:2600px) {
-    .offer-banner .offer-heading {
-        font-size: 50px;
-    }
-
-    .offer-banner .offer-title {
-        font-size: 70px;
-    }
-
-    .offer-banner .offer-description {
-        font-size: 20px;
-    }
-}
-
-/********large screens******/
-@media screen and (max-width: 1400px) {
-    .offer-banner .offer-heading {
-        font-size: 30px;
-    }
-
-    .offer-banner .offer-title {
-        font-size: 50px;
-    }
-
-    .offer-banner .offer-description {
-        font-size: 16px;
-    }
-}
-
-/******tablets*********/
-@media screen and (max-width: 800px) {
-    .offer-banner .offer-heading {
-        font-size: 20px;
-    }
-
-    .offer-banner .offer-title {
-        font-size: 30px;
-    }
-
-    .offer-banner .offer-description {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .offer-banner .offer-heading {
-        font-size: 25px;
-    }
-
-    .offer-banner .offer-title {
-        font-size: 30px;
-    }
-
-    .offer-banner .offer-description {
-        font-size: 14px;
-    }
-
-    .offer-banner {
-        flex-direction: column;
-    }
-
-    .offer-banner .pizza-left {
-        animation: none;
-        ;
-    }
-
-    .offer-banner .pizza-right {
-        animation: none;
-    }
-}
-
 /*testmonial-cards*/
 .testimonial-container {
     width: 100%;
@@ -1329,7 +1060,6 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
     margin: 0 15px;
-    /* Space between cards */
 }
 
 .profile-img {
@@ -1358,14 +1088,11 @@
     color: gray;
 }
 
-/* Default opacity for all slides */
 .testimonial-container .testimonial-carousel .slick-slide {
     opacity: 0.5;
     transform: scale(0.9);
-    /* Make other slides smaller */
 }
 
-/* Highlight the center slide */
 .testimonial-container .testimonial-carousel .slick-center {
     opacity: 1;
     z-index: 10;

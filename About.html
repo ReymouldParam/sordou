@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SorDou</title>
+  <link rel="icon" type="image/x-icon" href="/assests/images/home-page/logo.webp">
+  <!--animation links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--bootstrap links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--slick carousel links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--stylesheets-->
+  <link rel="stylesheet" href="/assests/css/global.css">
+  <link rel="stylesheet" href="/assests/css/animation.css">
+  <link rel="stylesheet" href="/assests/css/About.css">
+</head>
+
+<body>
+  <!---navbar-->
+  <nav class="navbar padding-x">
+    <div class="logo">
+      <img src="/assests/images/home-page/logo.webp" alt="Logo">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-container">
+      <ul class="nav-links nav-menu">
+        <li><a href=".">Home</a></li>
+        <li><a href="About.html" class="active">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#">Foods</a></li>
+        <li class="mobile-contact"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="global-btn desktop-contact">
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <!--end-->
+  <!--OurStory-banner-->
+  <div class="subpage-our-story">
+    <h1 class="main-text">Our Story</h1>
+  </div>
+  <!--end-->
+  <!--Mission & Vision-->
+  <div class="vision-mission padding-x">
+    <div class="content">
+      <h3 class="sub-heading">Nutrition & Taste</h3>
+      <h1 class="main-heading">Vision & Mission</h1>
+      <p>Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers. Experience culinary
+        bliss with every bite.</p>
+      <p>Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers.</p>
+    </div>
+    <div class="image-container">
+      <img src="/assests/images/about-page/vission-img1.webp" alt="Cupcakes" class="vision-img cake-img">
+      <img src="/assests/images/about-page/vision-img2.webp" alt="Pizza" class="vision-img pizza-img">
+    </div>
+  </div>
+  <!--end-->
+  <!---philosophy-->
+  <div class="philosophy padding-x">
+    <div class="philosophy-images">
+      <div class="image-container">
+        <img src="/assests/images/about-page/philosophy-img1 (2).webp" alt="Cupcakes" class="vision-img cake-img">
+        <img src="/assests/images/about-page/philosophy-img2.webp" alt="Pizza" class="vision-img pizza-img">
+      </div>
+    </div>
+    <div class="philosophy-content">
+      <h3 class="sub-heading">Taste Journey</h3>
+      <h1 class="main-heading">Our Philosophy</h1>
+      <p>Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers. Experience culinary
+        bliss with every bite.</p>
+      <p>Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers.</p>
+    </div>
+  </div>
+  <!--offer-->
+  <div class="offer">
+    <div class="offer-banner">
+      <img src="/assests/images/home-page/offer-pizzaimg.webp" alt="Pizza" class="pizza-left">
+      <div class="offer-content">
+        <p class="offer-heading">Exciting Offers</p>
+        <h1 class="offer-title">20% Off On Pizza</h1>
+        <p class="offer-description">
+          Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing burgers.
+        </p>
+      </div>
+      <img src="/assests/images/home-page/offer-pizzaimg.webp" alt="Pizza" class="pizza-right">
+    </div>
+  </div>
+  <!--end-->
+  <!--footer-->
+  <footer class="footer padding-x">
+    <div class="footer-container">
+      <div class="subscribe-section">
+        <div class="input-field">
+          <input type="email" placeholder="Enter your email" class="email-input">
+          <div class="subscribe-btn desktop-contact">
+            <a href="#">Subscribe</a>
+          </div>
+        </div>
+        <h3 class="subscribe-text">Add Your Email Get Offer & Discount</h3>
+      </div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="location">Delicious Pizza & Burger Joint 123 Main Street<br>Banjara Hills Hyderabad, Telangana,
+            India</p>
+        </div>
+
+        <div class="footer-center">
+          <i class="fa-solid fa-phone"></i>
+          <p class="contact">Phone: (302) 533 2345<br>Fax: (302) 533 2406<br>Email: Foodft123@Gmail.com</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">©2023 FoodFT. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!--end-->
+   <!--scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+   integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <!-- Bootstrap 5 JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+   integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+   integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script>
+   /*function for navbar in mobile-screen*/
+   function toggleMenu() {
+     const navContainer = document.querySelector('.nav-container');
+     const hamburger = document.querySelector('.hamburger');
+     navContainer.classList.toggle('active');
+     hamburger.classList.toggle('active');
+   }
+   </script>
+
+</body>
+
+</html>

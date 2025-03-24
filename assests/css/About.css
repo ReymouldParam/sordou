@@ -1,0 +1,425 @@
+/*******ourStory-banner*********/
+.subpage-our-story {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url('/assests/images/about-page/aboutus-banner.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subpage-our-story::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.5);
+}
+
+.subpage-our-story .main-text {
+    position: relative;
+    font-family: var(--std-font-family);
+    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-align: center;
+    font-weight:700;
+    margin:auto;
+    top:50px;
+}
+/***responsive***/
+/************extra-large screens************/
+@media (min-width:1700px) and (max-width:2600px) {
+    .subpage-our-story .main-text{
+        font-size:70px;
+    }
+}
+/***************larger screens*************/
+@media screen and (max-width: 1400px) {
+    .subpage-our-story .main-text{
+        font-size:40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .subpage-our-story .main-text{
+        font-size:30px;
+    }
+}
+/***************mobile screens**********/
+@media screen and (max-width: 600px) {
+    .subpage-our-story .main-text{
+        font-size:20px;
+    }
+}
+
+/*******end*****/
+/********mission & vision*****/
+.vision-mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 0;
+    background-color: #1A1C1D;
+}
+
+.vision-mission .content {
+    max-width: 50%;
+}
+
+.vision-mission .content .sub-heading {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--std-font-family);
+    color: white;
+}
+
+.vision-mission .content .sub-heading::after {
+    content: "";
+    flex-grow: 1;
+    width: 40%;
+    height: 1px;
+    display: inline-block;
+    background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    margin-left: 15px;
+}
+
+.vision-mission .content .main-heading {
+    font-family: var(--std-font-family);
+    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.vision-mission .content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Image container with overlapping effect */
+.vision-mission .image-container {
+    display: flex;
+    flex-direction: row; /* Keep images side by side */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.vision-mission .vision-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+.vision-mission .cake-img{
+    animation:  moveDownUp 2.5s infinite linear;
+}
+.vision-mission .pizza-img {
+    position:relative;
+    right:50px; /* Slightly overlaps the cake image */
+    top:50px;
+    z-index: 2;
+    animation: moveUpDown 2.5s infinite linear;
+}
+/*******responsive****/
+/************extra-large screens************/
+@media (min-width:1700px) and (max-width:2600px) {
+    .vision-mission .content .sub-heading {
+        font-size: 20px;
+    }
+    .vision-mission .content .main-heading {
+        font-size: 70px;
+    }
+    .vision-mission .content p {
+        font-size: 20px;
+    }
+    .vision-mission .vision-img {
+        width: 400px;
+        height: 400px;
+    }
+}
+/***************larger screens*************/
+@media screen and (max-width: 1400px) {
+    .vision-mission .content .sub-heading {
+        font-size: 16px;
+    }
+    .vision-mission .content .main-heading {
+        font-size: 40px;
+    }
+    .vision-mission .content p {
+        font-size: 16px;
+    }
+    .vision-mission .vision-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .vision-mission .content .sub-heading {
+        font-size: 14px;
+    }
+    .vision-mission .content .main-heading {
+        font-size: 30px;
+    }
+    .vision-mission .content p {
+        font-size: 14px;
+    }
+    .vision-mission .vision-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+/***************mobile screens**********/
+@media screen and (max-width: 600px) {
+    .vision-mission {
+        display: flex;
+        flex-direction: column;
+    }
+    .vision-mission .content {
+        max-width: 100%;
+    }
+    .vision-mission .content .sub-heading {
+        font-size: 14px;
+    }
+    .vision-mission .content .main-heading {
+        font-size: 20px;
+    }
+    .vision-mission .content p {
+        font-size: 14px;
+    }
+    .vision-mission .vision-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+}
+/******philosaphy****/
+.philosophy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    padding: 70px 0;
+    background-color: #1A1C1D;
+}
+
+.philosophy .philosophy-content {
+    max-width: 50%;
+}
+
+.philosophy .philosophy-content .sub-heading {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--std-font-family);
+    color: white;
+}
+
+.philosophy .philosophy-content .sub-heading::after {
+    content: "";
+    flex-grow: 1;
+    width: 40%;
+    height: 1px;
+    display: inline-block;
+    background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    margin-left: 15px;
+}
+
+.philosophy .philosophy-content .main-heading {
+    font-family: var(--std-font-family);
+    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.philosophy .philosophy-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Image container with overlapping effect */
+.philosophy .image-container {
+    display: flex;
+    flex-direction: row; /* Keep images side by side */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.philosophy .vision-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+.philosophy .cake-img{
+    animation: moveUpDown 2.5s infinite linear;
+}
+.philosophy .pizza-img {
+    position:relative;
+    right:50px; 
+    top:50px;
+    z-index: 2;
+    animation: moveDownUp 2.5s infinite linear;
+    
+}
+@keyframes moveUpDown {
+    0% { 
+        transform: translateY(0px);
+    } 
+    25% { 
+        transform: translateY(-20px);
+    } 
+    50% {
+         transform: translateY(-20px);
+    }
+    75% {
+        transform: translateY(0px);
+   }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveDownUp {
+    0% { 
+        transform: translateY(0px);
+    } 
+    25% { 
+        transform: translateY(20px);
+    } 
+    50% {
+         transform: translateY(20px);
+    }
+    75% {
+        transform: translateY(0px);
+   }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*******responsive*********/
+/************extra-large screens************/
+@media (min-width:1700px) and (max-width:2600px) {
+    .philosophy .philosophy-content .sub-heading {
+        font-size: 20px;
+    }
+    .philosophy .philosophy-content .main-heading {
+        font-size: 70px;
+    }
+    .philosophy .philosophy-content p {
+        font-size: 20px;
+    }
+    .philosophy .vision-img {
+        width: 400px;
+        height: 400px;
+    }
+    @keyframes moveUpDown {
+        0% { 
+            transform: translateY(0px);
+        } 
+        25% { 
+            transform: translateY(-40px);
+        } 
+        50% {
+             transform: translateY(-40px);
+        }
+        75% {
+            transform: translateY(0px);
+       }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes moveDownUp {
+        0% { 
+            transform: translateY(0px);
+        } 
+        25% { 
+            transform: translateY(40px);
+        } 
+        50% {
+             transform: translateY(40px);
+        }
+        75% {
+            transform: translateY(0px);
+       }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+}
+/***************larger screens*************/
+@media screen and (max-width: 1400px) {
+    .philosophy .philosophy-content .sub-heading {
+        font-size: 16px;
+    }
+    .philosophy .philosophy-content .main-heading {
+        font-size: 40px;
+    }
+    .philosophy .philosophy-content  p {
+        font-size: 16px;
+    }
+    .philosophy .vision-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .philosophy .philosophy-content .sub-heading {
+        font-size: 14px;
+    }
+    .philosophy .philosophy-content .main-heading {
+        font-size: 30px;
+    }
+    .philosophy .philosophy-content  p {
+        font-size: 14px;
+    }
+    .philosophy .vision-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+/***************mobile screens**********/
+@media screen and (max-width: 600px) {
+    .philosophy {
+      display:flex;
+      flex-direction:column;
+    }
+    .philosophy .philosophy-content {
+        padding-top:50px;
+        max-width: 100%;
+    }
+    .philosophy .philosophy-content .sub-heading {
+        font-size: 14px;
+    }
+    .philosophy .philosophy-content .main-heading {
+        font-size: 20px;
+    }
+    .philosophy .philosophy-content p {
+        font-size: 14px;
+    }
+    .philosophy .vision-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+}

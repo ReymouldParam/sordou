@@ -271,10 +271,9 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
-    margin: 20px 0;
     border-top: 1px solid #D4A94B;
     border-bottom: 1px solid #D4A94B;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer-left,
@@ -286,7 +285,6 @@ body {
     flex: 1;
     justify-content: center;
     position: relative;
-    padding: 0 20px;
 }
 
 /*.footer-left::after,
@@ -398,6 +396,12 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .footer-right{
+        width:100%;
+    }
     .footer-container .subscribe-section {
         flex-direction: column;
     }

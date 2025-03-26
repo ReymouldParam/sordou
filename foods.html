@@ -25,11 +25,11 @@
     <!--stylesheets-->
     <link rel="stylesheet" href="/assests/css/global.css">
     <link rel="stylesheet" href="/assests/css/animation.css">
-    <link rel="stylesheet" href="/assests/css/contact.css">
+    <link rel="stylesheet" href="/assests/css/foods.css">
 </head>
 
 <body>
-    <!--navbar-->
+    <!---navbar-->
     <nav class="navbar padding-x">
         <div class="logo">
             <a href="."><img src="/assests/images/home-page/logo sordou.webp" alt="Logo"></a>
@@ -45,7 +45,7 @@
             <ul class="nav-links nav-menu">
                 <li><a href=".">Home</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
                 <li><a href="foods.html">Foods</a></li>
                 <li class="mobile-contact"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -56,50 +56,20 @@
         </div>
     </nav>
     <!--end-->
-    <!--contact-banner-->
-    <div class="subpage-contact">
-        <h1 class="main-text">Contact</h1>
+    <!--food-banner-->
+    <div class="subpage-foods">
+        <h1 class="main-text">Foods</h1>
     </div>
     <!--end-->
-    <!--contact-details-->
-    <div class="contact-address-container padding-x">
-        <div class="box">
-            <h2 class="heading">Contact Us</h2>
-            <p class="sub-heading"><i class="fa-solid fa-phone"></i> +91-7207508286</p>
-            <p class="sub-heading"><i class="fa-regular fa-envelope"></i> Ocrave232@gmail.com</p>
+    <div class="images padding-x">
+        <div class="menu-title-content">
+            <h1 class="menu-title">Flavour Hub</h1>
+            <p class="menu-subtitle">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
+                burgers.
+            </p>
         </div>
-        <div class="box">
-            <h2 class="heading">Address</h2>
-            <p class="sub-heading">1-4-200/109/C/2, beside Vijaya diagnostics, Eshwaripuri, Sainikpuri</p>
-        </div>
+        <h2 class="menu-title-undertext">We are <span>tasty</span></h2>
     </div>
-    <!--end-->
-    <!---contact-form-->
-    <div class="contact-container padding-x">
-        <div class="contact-inner-container">
-            <div class="map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086423442125!2d-122.41941548468165!3d37.77492927975962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e2a7f23f9b9%3A0x4b0bcbf5f580b27!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1647017502606!5m2!1sen!2sus" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-            <div class="form-container">
-               <div class="inner-form-container">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Write Your Comment" rows="4" required></textarea>
-                    <button type="submit" class="global-btn text-black">Send</button>
-                    <!--<div class="global-btn desktop-contact">
-                        <a href="contact.html">Send</a>
-                    </div>-->
-                </form>
-               </div>
-            </div>
-        </div>
-    </div>
-    <!--end-->
     <!--offer-->
     <div class="offer">
         <div class="offer-banner">
@@ -154,31 +124,32 @@
         </div>
     </footer>
     <!--end-->
-    <!--scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
-        integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Bootstrap 5 JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
-        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        /*function for navbar in mobile-screen*/
-        function toggleMenu() {
-            const navContainer = document.querySelector('.nav-container');
-            const hamburger = document.querySelector('.hamburger');
-            navContainer.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        }
-    </script>
 </body>
+<!--scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+    integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    /*function for navbar in mobile-screen*/
+    function toggleMenu() {
+        const navContainer = document.querySelector('.nav-container');
+        const hamburger = document.querySelector('.hamburger');
+        navContainer.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+</script>
 
 </html>

@@ -596,6 +596,15 @@
     .our-story .text-section .ourstory-content {
         font-size: 14px;
     }
+    @keyframes moveFast {
+        0% {
+            transform: translateY(0);
+        }
+    
+        100% {
+            transform: translateY(50px);
+        }
+    }
 }
 
 /****Menu-section***/

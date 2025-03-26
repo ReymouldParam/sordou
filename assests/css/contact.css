@@ -73,7 +73,7 @@
     border-radius: 20px;
     text-align: center;
     width: 400px;
-    height: 200px;
+    height:auto;
 }
 
 .contact-address-container .heading {
@@ -303,6 +303,14 @@ textarea {
     .contact-container .contact-inner-container input,
     textarea {
         font-size: 14px;
+    }
+    .contact-container .contact-inner-container .map iframe{
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    .contact-container .contact-inner-container .form-container{
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
     }
 }
 /****overidding global-styles of offer-banner***/

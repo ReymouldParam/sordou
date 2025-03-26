@@ -32,7 +32,7 @@
   <!---navbar-->
   <nav class="navbar padding-x">
     <div class="logo">
-      <img src="/assests/images/home-page/logo.webp" alt="Logo">
+      <a href="."><img src="/assests/images/home-page/logo sordou.webp" alt="Logo"></a>
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">
@@ -115,7 +115,7 @@
       <p class="ourstory-content">Indulge in a symphony of flavors with our mouthwatering pizzas and tantalizing
         burgers.</p>
       <div class="global-btn">
-        <a href="#">Know More</a>
+        <a href="About.html">Know More</a>
       </div>
     </div>
     <div class="image-section">
@@ -136,40 +136,40 @@
       <div class="menu-card">
         <img src="/assests/images/home-page/carousel-img1.webp" alt="Chocolate Cake">
         <div class="content">
-          <h3>Chocolate Ganache Customized Cakes</h3>
-          <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+          <h3 class="title">Chocolate Ganache Customized Cakes </h3>
+          <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake </p>
           <div class="global-btn">
-            <a href="#">Know More</a>
+            <a href="menu.html">Know More</a>
           </div>
         </div>
       </div>
       <div class="menu-card">
         <img src="/assests/images/home-page/carousel-img2.webp" alt="Pizza">
         <div class="content">
-          <h3>Classic Tomato Pizza</h3>
-          <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+          <h3 class="title">Classic Tomato Pizza</h3>
+          <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake</p>
           <div class="global-btn">
-            <a href="#">Know More</a>
+            <a href="menu.html">Know More</a>
           </div>
         </div>
       </div>
       <div class="menu-card">
         <img src="/assests/images/home-page/carousel-img3.webp" alt="Cold Coffee">
         <div class="content">
-          <h3>Cold Coffee</h3>
-          <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+          <h3 class="title">Cold Coffee</h3>
+          <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake</p>
           <div class="global-btn">
-            <a href="#">Know More</a>
+            <a href="menu.html">Know More</a>
           </div>
         </div>
       </div>
       <div class="menu-card">
         <img src="/assests/images/home-page/carousel-img1.webp" alt="Chocolate Cake">
         <div class="content">
-          <h3>Chocolate Cake</h3>
-          <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+          <h3 class="title">Chocolate Cake</h3>
+          <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake</p>
           <div class="global-btn">
-            <a href="#">Know More</a>
+            <a href="menu.html">Know More</a>
           </div>
         </div>
       </div>
@@ -177,10 +177,10 @@
         <img src="https://s3-alpha-sig.figma.com/img/0686/b01f/af0dc29585e9749646f3270d7296a6b7?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rTUJlWKgAtdw5wuc1UX1clL60rXM0c7wZ2WjIaM2H8mROogniT6WK0ZSYsSmHesvi5U0A5pRvFfktf144cyXemANwk9INSdoVXFbNdypVYhhcTeL6-yL9AnGYlr9Lw082w7lNKWARNfVEKYmjcP7QqZd8J3WOiliT5z-OjDX652XmIfD912shmfXP-BxsxtJcGdHj7j54TkNAPIfjGUXm9OqjQKi01hhHpBatcRFzdi60VycN5kRdZAu6NfdfdqjVgGrUSLQevps2g7ffpvRiMFXpma-41XSzYZomfB0BhNa3~qgRnrG0e9~bcmUfLhICwGMDUmWGz0BylMVO2vrBg__"
           alt="Chocolate Cake">
           <div class="content">
-            <h3>Chocolate Cake</h3>
-            <p>Savor Every Bite of This Decadent Chocolate Cake</p>
+            <h3 class="title">Chocolate Cake</h3>
+            <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake</p>
             <div class="global-btn">
-              <a href="#">Know More</a>
+              <a href="menu.html">Know More</a>
             </div>
           </div>
       </div>
@@ -188,11 +188,12 @@
 
     <div class="bottom">
       <div class="controls">
-        <button class="control-btn" onclick="scrollMenu(-300)">❮</button>
-        <button class="control-btn" onclick="scrollMenu(300)">❯</button>
+        <button class="control-btn prev">❮</button>
+        <button class="control-btn next">❯</button>
       </div>
+      
       <div class="global-btn">
-        <a href="#">Know More</a>
+        <a href="menu.html">Know More</a>
       </div>
     </div>
   </div>
@@ -239,10 +240,14 @@
       </p>
     </div>
     <div class="img">
-      <img src="/assests/images/home-page/video-banner-img.webp" alt="Pizza Video Banner" class="banner-img">
+      <!-- <img src="/assests/images/home-page/video-banner-img.webp" alt="Pizza Video Banner" class="banner-img">
       <div class="play-icon">
         <i class="fa-regular fa-circle-play"></i>
-      </div>
+      </div> -->
+      <video  autoplay loop class="banner-img" >
+        <source src="/assests/images/home-page/7172269-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     </div>
   </div>
   <!---end of video-banner-->
@@ -406,34 +411,46 @@
     const slideUpSections3 = document.querySelectorAll(".widthAnimation");
     slideUpSections3.forEach((ele) => observeSlideUp3.observe(ele));
     /*********menu-section cards-carousel*********/
-    $('.menu-slider').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 200000,
-      arrows: false,
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 1200, // For screens smaller than 1200px
-          settings: {
-            slidesToShow: 3, // Show 3 slides
-          }
-        },
-        {
-          breakpoint: 992, // For screens smaller than 992px (tablets)
-          settings: {
-            slidesToShow: 2, // Show 2 slides
-          }
-        },
-        {
-          breakpoint: 768, // For screens smaller than 768px (mobile landscape)
-          settings: {
-            slidesToShow: 1, // Show 1 slide
-          }
-        },
-      ]
-    });
+    $(document).ready(function(){
+  $('.menu-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, // Fixed the value (200000 is too high)
+    arrows: false, // Disable default arrows
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+  // Custom Navigation for Previous and Next Buttons
+  $('.control-btn.prev').click(function(){
+    $('.menu-slider').slick('slickPrev'); 
+  });
+
+  $('.control-btn.next').click(function(){
+    $('.menu-slider').slick('slickNext');
+  });
+});
+
     /*********animation for play-icon video banner**********/
     document.addEventListener("DOMContentLoaded", function () {
       const playIcon = document.querySelector(".video-banner .img .play-icon");

@@ -154,9 +154,10 @@
 }
 
 .categories .item-name {
-    flex: 1;
+    /* flex: 1; */
     padding-right: 10px;
-    white-space: nowrap;
+    width:50%;
+    /* white-space: nowrap; */
 }
 
 .categories .item-name strong {
@@ -326,4 +327,14 @@
     .categories .banner-text{
         font-size: 14px;
     }
+}
+/****overidding global-styles of offer-banner***/
+.offer {
+    background-color:#101517;
+}
+.footer {
+    background-color:#101517;
+}
+.video-banner {
+    background-color: #101517;
 }

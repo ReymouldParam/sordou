@@ -17,68 +17,72 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .subpage-contact .main-text {
     position: relative;
     font-family: var(--std-font-family);
-    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 50px;
     text-align: center;
-    font-weight:700;
-    margin:auto;
-    top:50px;
+    font-weight: 700;
+    margin: auto;
+    top: 50px;
 }
+
 /***responsive***/
 /************extra-large screens************/
 @media (min-width:1700px) and (max-width:2600px) {
-    .subpage-contact .main-text{
-        font-size:70px;
+    .subpage-contact .main-text {
+        font-size: 70px;
     }
 }
+
 /***************larger screens*************/
 @media screen and (max-width: 1400px) {
-    .subpage-contact .main-text{
-        font-size:40px;
+    .subpage-contact .main-text {
+        font-size: 40px;
     }
 }
+
 @media screen and (max-width: 800px) {
-    .subpage-contact .main-text{
-        font-size:30px;
+    .subpage-contact .main-text {
+        font-size: 30px;
     }
 }
+
 /*********contact-details-banner******/
 .contact-address-container {
     display: flex;
     gap: 30px;
     padding: 20px;
-    width:100%;
-    margin:auto;
+    width: 100%;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    background-color:#101517 ;
+    background-color: #101517;
 }
 
 .contact-address-container .box {
-    background-color:#101517;
+    background-color: #101517;
     border: 2px solid #c49b36;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
     width: 400px;
-    height:200px;
+    height: 200px;
 }
 
 .contact-address-container .heading {
-    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
     margin-bottom: 10px;
-    font-weight:900;
+    font-weight: 900;
 }
 
 .contact-address-container .sub-heading {
@@ -89,14 +93,16 @@
 
 i {
     margin-right: 8px;
-    color:white;
+    color: white;
 }
+
 /*********responsive**************/
 /************extra-large screens************/
 @media (min-width:1700px) and (max-width:2600px) {
     .contact-address-container .heading {
         font-size: 40px;
     }
+
     .contact-address-container .sub-heading {
         font-size: 20px;
     }
@@ -107,15 +113,18 @@ i {
     .contact-address-container .heading {
         font-size: 25px;
     }
+
     .contact-address-container .sub-heading {
         font-size: 16px;
     }
 }
+
 /********tablets********/
 @media screen and (max-width: 800px) {
     .contact-address-container .heading {
         font-size: 20px;
     }
+
     .contact-address-container .sub-heading {
         font-size: 14px;
     }
@@ -123,64 +132,73 @@ i {
 
 /***************mobile screens**********/
 @media screen and (max-width: 600px) {
-    .contact-address-container{
+    .contact-address-container {
         flex-direction: column;
     }
+
     .contact-address-container .heading {
         font-size: 20px;
     }
+
     .contact-address-container .sub-heading {
         font-size: 14px;
     }
+
     .contact-address-container .box {
-        width:100%;
-        height:auto;
-        padding:5px;
+        width: 100%;
+        height: auto;
+        padding: 5px;
     }
 }
 
 /*contact-form*/
-.contact-container{
+.contact-container {
     background: #101517;
 }
+
 .contact-container .contact-inner-container {
     display: flex;
     width: 80%;
-    margin:auto;
+    margin: auto;
     border-radius: 30px;
 }
 
 .contact-container .contact-inner-container .map {
-    width: 70%;
-    height:auto;
+    width: 100%;
+    height: auto;
+}
+.contact-container .contact-inner-container .map iframe{
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
 }
 
 .contact-container .contact-inner-container .form-container {
-    width:70%;
+    width: 100%;
     background: white;
-    padding: 30px;
+    /* padding: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 25px solid; /* Required for border-image to work */
-    border-image-source: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
-    border-image-slice: 1; /* Ensures full border coverage */
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border: 25px solid #A57A2C;
+    /* border-image-source: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    border-image-slice: 1; */
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
 }
-.contact-container .contact-inner-container .form-container .inner-form-container{
-  position: relative;
-  z-index:2;
-  left:-100px;
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  max-width:100%;
-  height:auto;
+
+.contact-container .contact-inner-container .form-container .inner-form-container {
+    /* position: relative;
+    z-index: 2;
+    left: -100px; */
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
 }
 
 .contact-container .contact-inner-container .form-container .inner-form-container h2 {
-    text-align:left;
+    text-align: left;
     margin-bottom: 20px;
     font-size: 25px;
     color: black;
@@ -192,8 +210,9 @@ i {
     gap: 15px;
 }
 
-.contact-container .contact-inner-container input, textarea {
-    width: 100%;
+.contact-container .contact-inner-container input,
+textarea {
+    width:100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -201,7 +220,7 @@ i {
 }
 
 .contact-container .contact-inner-container button {
-    background:linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
     color: white;
     padding: 10px;
     border: none;
@@ -209,15 +228,18 @@ i {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
-    width:50%;
+    width: 50%;
 }
+
 /*********responsive**************/
 /************extra-large screens************/
 @media (min-width:1700px) and (max-width:2600px) {
     .contact-container .contact-inner-container .form-container .inner-form-container h2 {
         font-size: 30px;
     }
-    .contact-container .contact-inner-container input, textarea {
+
+    .contact-container .contact-inner-container input,
+    textarea {
         font-size: 18px;
     }
 }
@@ -227,16 +249,21 @@ i {
     .contact-container .contact-inner-container .form-container .inner-form-container h2 {
         font-size: 20px;
     }
-    .contact-container .contact-inner-container input, textarea {
+
+    .contact-container .contact-inner-container input,
+    textarea {
         font-size: 16px;
     }
 }
+
 /********tablets********/
 @media screen and (max-width: 800px) {
     .contact-container .contact-inner-container .form-container .inner-form-container h2 {
         font-size: 20px;
     }
-    .contact-container .contact-inner-container input, textarea {
+
+    .contact-container .contact-inner-container input,
+    textarea {
         font-size: 14px;
     }
 }
@@ -244,32 +271,44 @@ i {
 /***************mobile screens**********/
 @media screen and (max-width: 600px) {
     .contact-container .contact-inner-container {
-      flex-direction:column;
+        flex-direction: column;
     }
+
     .contact-container .contact-inner-container {
         width: 100%;
     }
-    
+
     .contact-container .contact-inner-container .map {
         width: 100%;
-        height:auto;
+        height: auto;
     }
-    .contact-container .contact-inner-container .form-container .inner-form-container{
+
+    .contact-container .contact-inner-container .form-container .inner-form-container {
         position: relative;
-        z-index:2;
-        left:0px;
-        max-width:100%;
-        height:auto;
-      }
-    
-    .contact-container .contact-inner-container .form-container {
-        width:100%;
-        padding:0px;
+        z-index: 2;
+        left: 0px;
+        max-width: 100%;
+        height: auto;
     }
+
+    .contact-container .contact-inner-container .form-container {
+        width: 100%;
+        padding: 0px;
+    }
+
     .contact-container .contact-inner-container .form-container .inner-form-container h2 {
         font-size: 20px;
     }
-    .contact-container .contact-inner-container input, textarea {
+
+    .contact-container .contact-inner-container input,
+    textarea {
         font-size: 14px;
     }
+}
+/****overidding global-styles of offer-banner***/
+.offer {
+    background-color:#101517;
+}
+.footer {
+    background-color:#101517;
 }

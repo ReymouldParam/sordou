@@ -423,3 +423,11 @@
         border-radius: 20px;
     }
 }
+
+/****overidding global-styles of offer-banner***/
+.offer {
+    background-color:#101517;
+}
+.footer {
+    background-color:#101517;
+}

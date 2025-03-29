@@ -174,15 +174,16 @@
         </div>
       </div>
       <div class="menu-card">
-        <img src="https://s3-alpha-sig.figma.com/img/0686/b01f/af0dc29585e9749646f3270d7296a6b7?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rTUJlWKgAtdw5wuc1UX1clL60rXM0c7wZ2WjIaM2H8mROogniT6WK0ZSYsSmHesvi5U0A5pRvFfktf144cyXemANwk9INSdoVXFbNdypVYhhcTeL6-yL9AnGYlr9Lw082w7lNKWARNfVEKYmjcP7QqZd8J3WOiliT5z-OjDX652XmIfD912shmfXP-BxsxtJcGdHj7j54TkNAPIfjGUXm9OqjQKi01hhHpBatcRFzdi60VycN5kRdZAu6NfdfdqjVgGrUSLQevps2g7ffpvRiMFXpma-41XSzYZomfB0BhNa3~qgRnrG0e9~bcmUfLhICwGMDUmWGz0BylMVO2vrBg__"
+        <img
+          src="https://s3-alpha-sig.figma.com/img/0686/b01f/af0dc29585e9749646f3270d7296a6b7?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rTUJlWKgAtdw5wuc1UX1clL60rXM0c7wZ2WjIaM2H8mROogniT6WK0ZSYsSmHesvi5U0A5pRvFfktf144cyXemANwk9INSdoVXFbNdypVYhhcTeL6-yL9AnGYlr9Lw082w7lNKWARNfVEKYmjcP7QqZd8J3WOiliT5z-OjDX652XmIfD912shmfXP-BxsxtJcGdHj7j54TkNAPIfjGUXm9OqjQKi01hhHpBatcRFzdi60VycN5kRdZAu6NfdfdqjVgGrUSLQevps2g7ffpvRiMFXpma-41XSzYZomfB0BhNa3~qgRnrG0e9~bcmUfLhICwGMDUmWGz0BylMVO2vrBg__"
           alt="Chocolate Cake">
-          <div class="content">
-            <h3 class="title">Chocolate Cake</h3>
-            <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake</p>
-            <div class="global-btn">
-              <a href="menu.html">Know More</a>
-            </div>
+        <div class="content">
+          <h3 class="title">Chocolate Cake</h3>
+          <p class="card-content">Savor Every Bite of This Decadent Chocolate Cake</p>
+          <div class="global-btn">
+            <a href="menu.html">Know More</a>
           </div>
+        </div>
       </div>
     </div>
 
@@ -191,7 +192,7 @@
         <button class="control-btn prev">❮</button>
         <button class="control-btn next">❯</button>
       </div>
-      
+
       <div class="global-btn">
         <a href="menu.html">Know More</a>
       </div>
@@ -245,10 +246,10 @@
       <div class="play-icon">
         <i class="fa-regular fa-circle-play"></i>
       </div> -->
-      <video  autoplay loop class="banner-img" >
+      <video autoplay loop class="banner-img">
         <source src="/assests/images/home-page/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
+      </video>
     </div>
   </div>
   <!---end of video-banner-->
@@ -313,7 +314,7 @@
       <div class="subscribe-section">
         <div class="input-field">
           <input type="email" placeholder="Enter your email" class="email-input">
-          <div class="subscribe-btn desktop-contact">
+          <div class="subscribe-btn">
             <a href="#">Subscribe</a>
           </div>
         </div>
@@ -412,45 +413,45 @@
     const slideUpSections3 = document.querySelectorAll(".widthAnimation");
     slideUpSections3.forEach((ele) => observeSlideUp3.observe(ele));
     /*********menu-section cards-carousel*********/
-    $(document).ready(function(){
-  $('.menu-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, // Fixed the value (200000 is too high)
-    arrows: false, // Disable default arrows
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  });
+    $(document).ready(function () {
+      $('.menu-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000, // Fixed the value (200000 is too high)
+        arrows: false, // Disable default arrows
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
 
-  // Custom Navigation for Previous and Next Buttons
-  $('.control-btn.prev').click(function(){
-    $('.menu-slider').slick('slickPrev'); 
-  });
+      // Custom Navigation for Previous and Next Buttons
+      $('.control-btn.prev').click(function () {
+        $('.menu-slider').slick('slickPrev');
+      });
 
-  $('.control-btn.next').click(function(){
-    $('.menu-slider').slick('slickNext');
-  });
-});
+      $('.control-btn.next').click(function () {
+        $('.menu-slider').slick('slickNext');
+      });
+    });
 
     /*********animation for play-icon video banner**********/
     document.addEventListener("DOMContentLoaded", function () {

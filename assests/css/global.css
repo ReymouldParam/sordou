@@ -436,7 +436,8 @@ body {
     .footer-content .footer-center .phone {
         font-size: 14px;
     }
-    .footer-right .social-icons{
+
+    .footer-right .social-icons {
         align-items: start;
     }
 
@@ -444,7 +445,13 @@ body {
         font-size: 14px;
     }
 
+    .email-input {
+        padding: 10px;
+    }
 
+    .subscribe-btn a {
+        padding: 10px 10px !important;
+    }
 }
 
 /*offer-banner*/

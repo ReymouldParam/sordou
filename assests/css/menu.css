@@ -107,6 +107,12 @@
     font-weight: bold;
 }
 
+.categories .category-menu ul li.active .category-menu-img {
+    width: 180px;
+    height: 180px;
+    transition: all 0.3s ease-in-out;
+}
+
 .categories .category-menu ul li::after {
     content: "";
     width: 0%;
@@ -156,7 +162,7 @@
 .categories .item-name {
     /* flex: 1; */
     padding-right: 10px;
-    width:50%;
+    width: 50%;
     /* white-space: nowrap; */
 }
 
@@ -212,9 +218,10 @@
     background-color: #A57A2C;
     border-radius: 5px;
 }
-.categories .banner-text{
+
+.categories .banner-text {
     font-size: 18px;
-    color:white;
+    color: white;
 }
 
 
@@ -228,16 +235,20 @@
         width: 250px;
         height: 250px;
     }
+
     .categories .menu-item {
         font-size: 20px;
     }
+
     .categories .item-name .sub-content {
         font-size: 15px;
     }
+
     .categories .veg {
         font-size: 12px;
     }
-    .categories .banner-text{
+
+    .categories .banner-text {
         font-size: 20px;
     }
 
@@ -253,19 +264,24 @@
         width: 120px;
         height: 120px;
     }
+
     .categories .menu-item {
         font-size: 16px;
     }
+
     .categories .item-name .sub-content {
         font-size: 14px;
     }
+
     .categories .veg {
         font-size: 10px;
     }
-    .categories .banner-text{
+
+    .categories .banner-text {
         font-size: 16px;
     }
 }
+
 @media screen and (max-width: 800px) {
     .categories .category-menu ul li {
         font-size: 14px;
@@ -275,15 +291,19 @@
         width: 70px;
         height: 70px;
     }
+
     .categories .menu-item {
         font-size: 14px;
     }
+
     .categories .item-name .sub-content {
         font-size: 14px;
     }
+
     .categories .veg {
         font-size: 10px;
     }
+
     .categories .category-menu ul {
         flex-wrap: wrap;
     }
@@ -292,7 +312,8 @@
         flex: 1 1 30%;
         text-align: center;
     }
-    .categories .banner-text{
+
+    .categories .banner-text {
         font-size: 14px;
     }
 }
@@ -307,15 +328,19 @@
         width: 70px;
         height: 70px;
     }
+
     .categories .menu-item {
         font-size: 12px;
     }
+
     .categories .item-name .sub-content {
         font-size: 12px;
     }
+
     .categories .veg {
         font-size: 10px;
     }
+
     .categories .category-menu ul {
         flex-wrap: wrap;
     }
@@ -324,17 +349,21 @@
         flex: 1 1 30%;
         text-align: center;
     }
-    .categories .banner-text{
+
+    .categories .banner-text {
         font-size: 14px;
     }
 }
+
 /****overidding global-styles of offer-banner***/
 .offer {
-    background-color:#101517;
+    background-color: #101517;
 }
+
 .footer {
-    background-color:#101517;
+    background-color: #101517;
 }
+
 .video-banner {
     background-color: #101517;
 }

@@ -289,11 +289,13 @@ textarea {
         left: 0px;
         max-width: 100%;
         height: auto;
+        padding:0px;
     }
 
     .contact-container .contact-inner-container .form-container {
         width: 100%;
-        padding: 0px;
+        padding: 10px;
+        border: 10px solid #A57A2C;
     }
 
     .contact-container .contact-inner-container .form-container .inner-form-container h2 {
@@ -311,6 +313,8 @@ textarea {
     .contact-container .contact-inner-container .form-container{
         border-top-left-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
     }
 }
 /****overidding global-styles of offer-banner***/

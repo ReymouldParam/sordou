@@ -206,8 +206,8 @@ body {
     }
 
     .padding-x {
-        padding-left: 30px !important;
-        padding-right: 30px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 
@@ -617,16 +617,19 @@ body {
     }
 
     .offer-banner {
-        flex-direction: column;
+        flex-direction:column;
     }
 
     .offer-banner .pizza-left {
         animation: none;
-        ;
     }
 
     .offer-banner .pizza-right {
         animation: none;
+    }
+    .offer-banner img {
+        width: 150px;
+        height: auto;
     }
 }
 

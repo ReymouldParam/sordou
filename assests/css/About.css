@@ -105,10 +105,9 @@
     color: #ddd;
 }
 
-/* Image container with overlapping effect */
 .vision-mission .image-container {
     display: flex;
-    flex-direction: row; /* Keep images side by side */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -127,7 +126,7 @@
 }
 .vision-mission .pizza-img {
     position:relative;
-    right:50px; /* Slightly overlaps the cake image */
+    right:50px;
     top:50px;
     z-index: 2;
     animation: moveUpDown 2.5s infinite linear;
@@ -252,10 +251,9 @@
     color: #ddd;
 }
 
-/* Image container with overlapping effect */
 .philosophy .image-container {
     display: flex;
-    flex-direction: row; /* Keep images side by side */
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
     gap: 20px;

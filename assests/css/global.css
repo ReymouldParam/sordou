@@ -604,7 +604,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .offer-banner .offer-heading {
+    /* .offer-banner .offer-heading {
         font-size: 25px;
     }
 
@@ -630,7 +630,61 @@ body {
     .offer-banner img {
         width: 150px;
         height: auto;
+    } */
+    .offer-banner {
+        padding: 5vw 3vw; /* Reduce padding for mobile */
     }
+
+    .offer-banner img {
+        width: 20%; /* Further reduce image size */
+        max-width: 100px;
+    }
+
+    .offer-banner .offer-heading {
+        font-size: 5vw;
+    }
+
+    .offer-banner .offer-title {
+        font-size: 6vw;
+    }
+
+    .offer-banner .offer-description {
+        font-size: 3vw;
+    }
+    @keyframes lefteffect {
+        0% {
+            transform: translate(0px, 0px) rotate(0deg);
+        }
+        50% {
+            transform: translate(0px, 40px) rotate(180deg);
+        }
+
+        75% {
+            transform: translate(-20px, 20px) rotate(270deg);
+        }
+
+        100% {
+            transform: translate(0px, 0px) rotate(360deg);
+        }
+    }
+    @keyframes righteffect {
+        0% {
+            transform: translate(0px, 0px) rotate(0deg);
+        }
+    
+        50% {
+            transform: translate(0px, -40px) rotate(180deg);
+        }
+    
+        75% {
+            transform: translate(20px, -20px) rotate(270deg);
+        }
+    
+        100% {
+            transform: translate(0px, 0px) rotate(360deg);
+        }
+    }
+
 }
 
 /******video-banner-section*****/

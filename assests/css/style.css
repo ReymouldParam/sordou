@@ -310,7 +310,7 @@
     }
 }
 
-/***********tablets****************/
+/***********tablet****************/
 @media screen and (max-width: 800px) {
     .main-landing-section .inner-container .top-content {
         flex-direction: column;

@@ -86,10 +86,10 @@
             <div class="form-container">
                 <div class="inner-form-container">
                     <h2>Contact Us</h2>
-                    <form>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <textarea placeholder="Write Your Comment" rows="4" required></textarea>
+                    <form action="contact.php" method="post">
+                        <input type="text" name="text" placeholder="Name"  class="form-control" required>
+                        <input type="email" name="email" placeholder="Email Address" class="form-control" required>
+                        <textarea name="text" placeholder="Write Your Comment" class="form-control" rows="4" required></textarea>
                         <button type="submit" class="global-btn text-black">Send</button>
                         <!--<div class="global-btn desktop-contact">
                         <a href="contact.html">Send</a>

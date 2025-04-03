@@ -69,11 +69,16 @@
 .contact-address-container .box {
     background-color: #101517;
     border: 2px solid #c49b36;
-    padding: 30px;
+    padding: 10px;
     border-radius: 20px;
     text-align: center;
     width: 400px;
-    height:auto;
+    min-height: 200px;
+    /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-address-container .heading {
@@ -167,7 +172,8 @@ i {
     width: 100%;
     height: auto;
 }
-.contact-container .contact-inner-container .map iframe{
+
+.contact-container .contact-inner-container .map iframe {
     border-top-left-radius: 30px !important;
     border-bottom-left-radius: 30px !important;
 }
@@ -212,7 +218,7 @@ i {
 
 .contact-container .contact-inner-container input,
 textarea {
-    width:100%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -289,7 +295,7 @@ textarea {
         left: 0px;
         max-width: 100%;
         height: auto;
-        padding:0px;
+        padding: 0px;
     }
 
     .contact-container .contact-inner-container .form-container {
@@ -306,21 +312,25 @@ textarea {
     textarea {
         font-size: 14px;
     }
-    .contact-container .contact-inner-container .map iframe{
+
+    .contact-container .contact-inner-container .map iframe {
         border-top-left-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
     }
-    .contact-container .contact-inner-container .form-container{
+
+    .contact-container .contact-inner-container .form-container {
         border-top-left-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
         border-top-right-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
     }
 }
+
 /****overidding global-styles of offer-banner***/
 .offer {
-    background-color:#101517;
+    background-color: #101517;
 }
+
 .footer {
-    background-color:#101517;
+    background-color: #101517;
 }

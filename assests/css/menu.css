@@ -77,7 +77,6 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
     padding: 0;
     position: relative;
     border-bottom: 2px solid #D4A94B;
@@ -96,8 +95,8 @@
 }
 
 .categories .category-menu ul li .category-menu-img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height:130px;
 }
 
 .categories .category-menu ul li.active {
@@ -258,6 +257,7 @@
 @media screen and (max-width: 1400px) {
     .categories .category-menu ul li {
         font-size: 16px;
+        padding:5px;
     }
 
     .categories .category-menu ul li .category-menu-img {

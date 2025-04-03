@@ -231,10 +231,13 @@
     }
 
     .categories .category-menu ul li .category-menu-img {
-        width: 250px;
-        height: 250px;
+        width: 180px;
+        height: 180px;
     }
-
+    .categories .category-menu ul li.active .category-menu-img {
+        width: 200px;
+        height: 200px;
+    }
     .categories .menu-item {
         font-size: 20px;
     }

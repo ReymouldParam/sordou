@@ -223,6 +223,19 @@
     color: white;
 }
 
+.dwn-btn a {
+    padding: 10px 40px !important;
+    border: 2px solid #C89F5D;
+    border-radius: var(--std-btn-border-radius);
+    background: linear-gradient(90deg, #A57A2C, #D4A94B, #FCEC94, #E4BE69, #FFD77D, #B6903F, #956E2B);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: var(--std-btn-font-size);
+    
+}
+
 
 /************extra-large screens************/
 @media (min-width:1700px) and (max-width:2600px) {

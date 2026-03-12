@@ -76,7 +76,7 @@
 /********images-section******/
 .images {
     background-color: #101517;
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 .images .menu-title-content {
@@ -122,32 +122,24 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    gap: 10px;
-    max-width: 100%;
-    margin: auto;
+    gap: 16px;
 }
 
-.grid-container img {
-    width: 100%;
+.img-wrapper {
+    height:auto;
+    /* compact fixed height */
     border-radius: 30px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position:top center;
 }
 
-.grid-container img:nth-child(3n + 1) {
-    /* First column */
-    height: 470px;
-}
 
-.grid-container img:nth-child(3n + 2) {
-     /* Second column */
-    height: 500px;
-}
-
-.grid-container img:nth-child(3n) {
-    /* Third column */
-    height: 470px;
-}
 /*******responsive**********/
 @media (min-width:1700px) and (max-width:2600px) {
     .images .menu-title {
@@ -169,23 +161,16 @@
         font-size: 40px;
     }
 
-    .images .menu-subtitle  {
+    .images .menu-subtitle {
         font-size: 16px;
     }
 
     .images .menu-title-undertext {
         font-size: 30px;
     }
-    .grid-container img:nth-child(3n + 1) {
-        height: 370px;
-    }
-    
-    .grid-container img:nth-child(3n + 2) {
-        height: 400px;
-    }
-    
-    .grid-container img:nth-child(3n) {
-        height: 370px;
+
+    .img-wrapper {
+        /* height: 350px; */
     }
 }
 
@@ -202,14 +187,15 @@
     .images .menu-title-undertext {
         font-size: 20px;
     }
+
     .grid-container img:nth-child(3n + 1) {
         height: 330px;
     }
-    
+
     .grid-container img:nth-child(3n + 2) {
         height: 350px;
     }
-    
+
     .grid-container img:nth-child(3n) {
         height: 330px;
     }
@@ -235,18 +221,9 @@
     .images .menu-title-undertext {
         font-size: 10px;
     }
-    .grid-container img {
+
+    .img-wrapper {
+        height:auto;
         border-radius: 10px;
-    }
-    .grid-container img:nth-child(3n + 1) {
-        height:100px;
-    }
-    
-    .grid-container img:nth-child(3n + 2) {
-        height:100px;
-    }
-    
-    .grid-container img:nth-child(3n) {
-        height:100px;
     }
 }

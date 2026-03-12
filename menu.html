@@ -457,11 +457,9 @@
             const observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            playIcon.classList.add("show-icon"); // Move up and fade in
-                        } else {
-                            playIcon.classList.remove("show-icon"); // Move down and fade out
-                        }
+                        // if (entry.isIntersecting) {
+                        //     playIcon.classList.add("show-icon"); // Move up and fade in
+                        // } 
                     });
                 },
                 { threshold: 0.5 } // Trigger when 50% of the section is visible

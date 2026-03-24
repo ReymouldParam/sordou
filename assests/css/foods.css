@@ -126,7 +126,7 @@
 }
 
 .img-wrapper {
-    height:auto;
+    height: auto;
     /* compact fixed height */
     border-radius: 30px;
     overflow: hidden;
@@ -136,7 +136,234 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position:top center;
+    object-position: top center;
+}
+
+/* ---- Celebrity Gallery ---- */
+.celebrity-section {
+    padding: 10px 0%;
+    background: #0d0d0d;
+    position: relative;
+    overflow: hidden;
+}
+
+.celebrity-section::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(212, 163, 77, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.celebrity-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.celebrity-header .eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #d4a34d;
+    margin-bottom: 16px;
+}
+
+.celebrity-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #f5f0e8;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: 1.15;
+}
+
+.celebrity-header h2 em {
+    font-style: italic;
+    color: #d4a34d;
+}
+
+.celebrity-header p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: #888;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Masonry-style grid */
+.celebrity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Featured large tiles */
+.celebrity-grid .cel-item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.celebrity-grid .cel-item:nth-child(6) {
+    grid-column: span 2;
+}
+
+.cel-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #1a1a1a;
+    cursor: pointer;
+}
+
+.cel-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            transparent 40%,
+            rgba(0, 0, 0, 0.75) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.cel-item:hover::after {
+    opacity: 1;
+}
+
+.cel-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(0.92) saturate(0.9);
+}
+
+.cel-item:hover img {
+    transform: scale(1.06);
+    filter: brightness(1) saturate(1.1);
+}
+
+/* Gold shimmer border on hover */
+.cel-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border: 1.5px solid transparent;
+    background: linear-gradient(135deg, #d4a34d, #f5d78e, #d4a34d) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.cel-item:hover::before {
+    opacity: 1;
+}
+
+/* Caption on hover */
+.cel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 18px 16px;
+    z-index: 3;
+    transform: translateY(6px);
+    opacity: 0;
+    transition: all 0.35s ease;
+}
+
+.cel-item:hover .cel-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cel-caption span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #d4a34d;
+}
+
+/* Divider accent */
+.celebrity-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 56px;
+}
+
+.celebrity-divider::before,
+.celebrity-divider::after {
+    content: '';
+    flex: 1;
+    max-width: 160px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4a34d44);
+}
+
+.celebrity-divider::after {
+    background: linear-gradient(to left, transparent, #d4a34d44);
+}
+
+.celebrity-divider .diamond {
+    width: 8px;
+    height: 8px;
+    background: #d4a34d;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .celebrity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .celebrity-grid .cel-item:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .celebrity-grid .cel-item:nth-child(6) {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 560px) {
+    .celebrity-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .celebrity-grid .cel-item:nth-child(1),
+    .celebrity-grid .cel-item:nth-child(6) {
+        grid-column: span 2;
+    }
+
+    .celebrity-section {
+        padding: 56px 4%;
+    }
 }
 
 
@@ -223,7 +450,91 @@
     }
 
     .img-wrapper {
-        height:auto;
+        height: auto;
         border-radius: 10px;
+    }
+}
+
+.celebrity-section {
+    padding: 80px 5%;
+    background: #0d0d0d;
+}
+
+/* HEADER */
+.celebrity-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.celebrity-header .eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #d4a34d;
+}
+
+.celebrity-header h2 {
+    font-size: 2.6rem;
+    color: #f5f0e8;
+}
+
+.celebrity-header em {
+    color: #d4a34d;
+}
+
+/* GRID */
+.celebrity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ITEMS */
+.cel-item {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+/* HERO ITEM */
+.cel-item.hero {
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: auto;
+}
+
+/* IMAGE */
+.cel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* HOVER */
+.cel-item img {
+    transition: transform 0.4s ease;
+}
+
+.cel-item:hover img {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .celebrity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cel-item.hero {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .celebrity-grid {
+        gap: 8px;
     }
 }
